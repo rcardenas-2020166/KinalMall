@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteEmpleados" language="groovy" pageWidth="864" pageHeight="792" orientation="Landscape" columnWidth="864" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2126d957-ed74-4c77-a74c-a236fe52e905">
+	<property name="ireport.zoom" value="0.6209213230591569"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="472"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#FFF6EF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#FFDAB9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#FFDDBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="codigoEmpleado" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ReporteHorizontal" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[SELECT *
+FROM
+    Empleados E inner join
+    Departamentos D inner join
+    Cargos C inner join
+    Horarios H inner join
+    Administracion A on
+   	 E.codigoDepartamento = D.codigoDepartamento and
+   	 E.codigoCargo = C.codigoCargo and
+   	 E.codigoHorario = H.codigoHorario and
+   	 E.codigoAdministracion = A.codigoAdministracion
+    WHERE E.codigoEmpleado = $P{codigoEmpleado};]]>
+	</queryString>
+	<field name="codigoEmpleado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombresEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidosEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="correoElectronico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoEmpleado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaContratacion" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sueldo" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoDepartamento" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoCargo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoHorario" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoAdministracion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreDepartamento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreCargo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaEntrada" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaSalida" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lunes" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="martes" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="miercoles" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jueves" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="viernes" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="792" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="864" height="792" uuid="2be4150a-f433-46de-b756-320139708b00"/>
+				<imageExpression><![CDATA[$P{ReporteHorizontal}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="163" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="592" y="12" width="100" height="20" forecolor="#F8C471" uuid="c527d8ac-04fb-4bcc-aa1d-966e4b85d939"/>
+				<textElement>
+					<font fontName="Century Gothic" size="15"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="650" y="12" width="107" height="20" forecolor="#F8C471" uuid="530e2017-e780-4fbe-9c54-723b389f5e13"/>
+				<textElement>
+					<font fontName="Century Gothic" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="60" width="316" height="49" forecolor="#000000" uuid="08f69cc2-6c35-4d2b-9fc2-a886d4d57a95"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Century Gothic" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte        Empleado]]></text>
+			</staticText>
+			<line>
+				<reportElement x="30" y="98" width="316" height="1" forecolor="#333333" backcolor="#666666" uuid="09ade2bb-a501-441d-9803-0a23fd4013ae"/>
+				<graphicElement>
+					<pen lineWidth="4.0" lineStyle="Solid" lineColor="#EF5436"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="30" y="60" width="305" height="48" forecolor="#213670" uuid="5279b0d4-167f-4873-a6d1-5e665b92800f"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Century Gothic" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                de]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="458" splitType="Stretch">
+			<textField>
+				<reportElement x="632" y="19" width="67" height="30" uuid="cf7eac31-6d60-430a-8fc8-646e7a24be8f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="235" y="68" width="151" height="23" uuid="9cd3ac53-2420-4339-82da-abd6f0b3df7d"/>
+				<box leftPadding="0"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isStrikeThrough="false"/>
+					<paragraph spacingAfter="50" tabStopWidth="50">
+						<tabStop position="0" alignment="Center"/>
+					</paragraph>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombresEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="111" width="151" height="23" uuid="4d2ef664-fddd-4e6b-a908-d8bbe77c8693"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apellidosEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="150" width="176" height="39" uuid="52b27d2b-96f8-4f5f-8334-52ad2769ba3c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{correoElectronico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="203" width="78" height="20" uuid="128e7619-1282-4db3-806b-8dac780af7f7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoEmpleado}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="632" y="118" width="75" height="25" uuid="23ac6cf0-351b-4c9a-b199-554376e089fe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sueldo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="632" y="159" width="139" height="27" uuid="2af1a9fa-dd0f-4363-a808-7be3e9fed715"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreDepartamento}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="632" y="203" width="125" height="34" forecolor="#000000" backcolor="#FFFFFF" uuid="8c5711d9-b77c-4f79-ba07-8ea51907cab0"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreCargo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="235" y="311" width="100" height="39" forecolor="#000000" backcolor="#FFFFFF" uuid="14610e51-427a-4799-9734-23f5c3687727"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaEntrada}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="235" y="362" width="100" height="39" forecolor="#000000" backcolor="#FFFFFF" uuid="9c90de4e-de9c-4513-9cd5-560bb4435fe3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaSalida}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="504" y="19" width="69" height="30" uuid="3b6a87e6-6f36-4e63-b0bb-23d99ff1132f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="15" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Código :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="68" width="69" height="23" uuid="4a980948-5d87-40f9-b396-af905bb743df"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="111" width="69" height="23" uuid="b6a1475a-72c6-478f-b0e9-e02ff73df83f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="150" width="96" height="39" uuid="c39fbca1-f388-4aeb-a59c-a71cb05b8987"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Correo
+Electrónico :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="203" width="69" height="20" uuid="948fea66-493a-4ecd-ac00-4316ca8be08d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Télefono :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="118" width="69" height="25" uuid="f8743e62-0359-4b7c-ab46-96d6bdd0dd7b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sueldo :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="19" width="249" height="30" forecolor="#000066" uuid="77e55652-dda4-4dde-be03-087923c05177"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datos del Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="159" width="100" height="27" uuid="a6fc17ad-9855-42cd-aa74-c92f979ef3ce"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Departamento :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="203" width="86" height="34" uuid="bae3f704-32ea-483c-807e-109968ecd1de"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cargo :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="311" width="96" height="39" uuid="71a6ae8c-2298-4414-a174-6b4036b9fd38"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora de
+Entrada :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="362" width="96" height="39" uuid="c7165456-a1e8-4a8a-84be-7ee0263c272e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora de
+Salida :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="256" width="249" height="30" forecolor="#000066" uuid="f129ecb6-7ac0-4339-9aae-1ace4d7fd16f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="256" width="249" height="30" forecolor="#000066" uuid="84c85b44-c699-4d68-85be-8cd1f4768a89"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Administración]]></text>
+			</staticText>
+			<line>
+				<reportElement x="97" y="56" width="670" height="1" forecolor="#333333" backcolor="#666666" uuid="32191757-398c-432e-9fa1-f145bde43782"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="97" y="297" width="670" height="1" forecolor="#333333" backcolor="#666666" uuid="6aa67047-039a-4cf8-a265-16ac52bbc223"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="636" y="311" width="135" height="39" forecolor="#000000" backcolor="#FFFFFF" uuid="b7b0c329-38a8-48a3-b569-aaf8b13680c4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="636" y="362" width="135" height="39" forecolor="#000000" backcolor="#FFFFFF" uuid="ab585312-58c6-4670-a11b-617e36f09a2b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="504" y="311" width="104" height="39" uuid="ddc9551d-9636-45c2-b1b6-a03e9e5f752d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección
+Administración :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="362" width="104" height="39" uuid="165eb0c3-06f5-4363-ae6e-923bf2de4c20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono
+Administración :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="68" width="100" height="37" uuid="1f32f161-d1fc-4c43-a9b8-8cb0717b6db1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de
+Contratación: ]]></text>
+			</staticText>
+			<textField evaluationTime="Auto" pattern="dd/MM/yyyy" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="632" y="68" width="142" height="37" forecolor="#000000" backcolor="#FFFFFF" uuid="37ba3070-6197-4f0b-9931-708d1868cbe2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Century Gothic" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaContratacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="10" width="210" height="33" forecolor="#333333" uuid="52934de2-88a5-44fc-b983-7efe0ed37705"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Century Gothic" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rodrigo Gerardo Cárdenas Monroy 2020166 - IN5AV]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

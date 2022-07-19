@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteAdministracion" language="groovy" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="529a6dc4-888a-45b8-aeb3-0cc4635f9822">
+	<property name="ireport.zoom" value="0.620921323059158"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="251"/>
+	<subDataset name="dataset1" uuid="3fcff681-5ad9-4bbb-a3cb-c23d40fa2255"/>
+	<parameter name="ReporteAdministracion" class="java.io.InputStream" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[call sp_ListarDatosAdministracion();]]>
+	</queryString>
+	<field name="codigoAdministracion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="792">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="612" height="792" uuid="58bb3f7a-7ffc-4865-a460-b78727b8d5e7"/>
+				<imageExpression><![CDATA[$P{ReporteAdministracion}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="202" splitType="Stretch">
+			<staticText>
+				<reportElement x="365" y="77" width="100" height="20" forecolor="#F8C471" uuid="4ec2dcaa-d116-4440-81d2-0f8b7807c2df"/>
+				<textElement>
+					<font fontName="Century Gothic" size="15"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="423" y="77" width="107" height="20" forecolor="#F8C471" uuid="d98c1b54-6903-445a-9ec9-7f94b4988904"/>
+				<textElement>
+					<font fontName="Century Gothic" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="52" y="0" width="502" height="47" forecolor="#D5D5DB" backcolor="#D5DBDB" uuid="47d6732e-2d89-4d27-b1be-048224695807"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="64" y="0" width="125" height="47" uuid="94685644-a9ba-4c8b-a6b1-ac59e3be7c85"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Administración]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="0" width="145" height="47" uuid="8da6c50f-239e-4a96-b735-bce4b730a4bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="0" width="100" height="47" uuid="4f028e19-21c7-49bc-a01b-47d07e4ad1cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="64" y="0" width="125" height="20" uuid="962f8710-dafe-4637-aacf-075ef648a1bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoAdministracion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="0" width="145" height="20" uuid="64ba2580-789d-4f54-b890-9759b01fc9e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="100" height="20" uuid="fb503b32-32b7-418e-b9c7-3785640e906b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="52" y="27" width="502" height="1" uuid="b12c16dc-3c49-4e4f-9068-978d392b2a45"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="66">
+			<textField>
+				<reportElement x="530" y="10" width="66" height="46" forecolor="#FFFFFF" uuid="23f3beb5-2a75-4045-9365-82f2769a99c3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="23" width="210" height="33" forecolor="#333333" uuid="08d12561-ffbd-4b96-aa86-f40eff6e8514"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Century Gothic" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rodrigo Gerardo Cárdenas Monroy 2020166 - IN5AV]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

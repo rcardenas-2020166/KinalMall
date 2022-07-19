@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.ClienteController">
+   <children>
+      <Pane layoutX="176.0" prefHeight="531.0" prefWidth="924.0" styleClass="textoPane" stylesheets="@../resource/VistaClientesCSS.css">
+         <children>
+            <GridPane layoutX="32.0" layoutY="22.0" prefHeight="41.0" prefWidth="846.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="82.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="122.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="185.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="79.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="280.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="79.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Código &#10;Cliente" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="txtCodigoCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="90.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="108.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Nombres &#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtNombresCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="80.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Apellidos&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <TextField fx:id="txtApellidosCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="39.0" layoutY="90.0" prefHeight="41.0" prefWidth="846.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="82.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="122.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="185.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="79.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="280.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="txtTelefonoCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="142.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="76.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Teléfono&#10;Cliente" textAlignment="CENTER" wrapText="true" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="107.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Dirección&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtDireccionCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="74.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Email&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <TextField fx:id="txtEmailCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaClientesCSS.css" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="18.0" layoutY="158.0" prefHeight="41.0" prefWidth="311.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="98.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="213.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="81.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Código&#10;Local" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoLocal" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="225.0" promptText="Local" stylesheets="@../resource/VistaClientesCSS.css" unFocusColor="WHITE" visibleRowCount="5" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="345.0" layoutY="158.0" prefHeight="41.0" prefWidth="280.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="145.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="126.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Código &#10;Administración" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoAdministracion" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="131.0" promptText="Administración" stylesheets="@../resource/VistaClientesCSS.css" unFocusColor="WHITE" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="629.0" layoutY="158.0" prefHeight="41.0" prefWidth="263.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="110.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="153.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="98.0" styleClass="labels" stylesheets="@../resource/VistaClientesCSS.css" text="Código &#10;Tipo Cliente" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoTipoCliente" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Tipo de Cliente" stylesheets="@../resource/VistaClientesCSS.css" unFocusColor="WHITE" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblClientes" editable="true" layoutX="25.0" layoutY="226.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="280.0" prefWidth="875.0" styleClass="table-cell" stylesheets="@../resource/VistaClientesCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoCliente" minWidth="-1.0" prefWidth="54.0" text="Código &#10;Cliente" />
+                <TableColumn fx:id="colNombresCliente" minWidth="-1.0" prefWidth="112.0" text="Nombres&#10;Cliente&#10;" />
+                  <TableColumn fx:id="colApellidosCliente" minWidth="-1.0" prefWidth="117.0" text="Apellidos&#10;Cliente" />
+                  <TableColumn fx:id="colTelefonoCliente" minWidth="-1.0" prefWidth="63.0" text="Teléfono&#10;Cliente" />
+                  <TableColumn fx:id="colDireccionCliente" minWidth="-1.0" prefWidth="143.0" text="Dirección&#10;Cliente&#10;" />
+                  <TableColumn fx:id="colEmailCliente" minWidth="-1.0" prefWidth="191.0" text="Email &#10;Cliente&#10;&#10;" />
+                  <TableColumn fx:id="colCodigoLocal" maxWidth="167.0" minWidth="-1.0" prefWidth="59.0" text="Código&#10;Local&#10;" />
+                  <TableColumn fx:id="colCodigoAdministracion" prefWidth="54.0" text="Código&#10;Admón." />
+                  <TableColumn fx:id="colCodigoTipoCliente" maxWidth="176.0" minWidth="-1.0" prefWidth="77.0" text="Código&#10;Tipo Cliente&#10;" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane prefHeight="531.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaClientesCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="CENTER" contentDisplay="CENTER" layoutY="219.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaClientesCSS.css" text="Nuevo" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="264.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaClientesCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="309.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaClientesCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="354.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaClientesCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="149.0" fitWidth="176.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/clientes.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="176.0" text="CLIENTES" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="7.0" layoutY="477.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton fx:id="btnRegresar" alignment="CENTER" contentDisplay="CENTER" layoutY="415.0" onMouseClicked="#ventanaTipoCliente" prefHeight="45.0" prefWidth="176.0" styleClass="btnRegresar" stylesheets="@../resource/VistaClientesCSS.css" text=" Regresar" textAlignment="CENTER" textFill="#f39c12">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconRegresar" fill="#f39c12" fontSmoothingType="LCD" glyphName="ARROW_LEFT" size="29" wrappingWidth="140.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

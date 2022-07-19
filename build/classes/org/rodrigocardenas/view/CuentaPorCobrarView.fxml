@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.CuentaPorCobrarController">
+   <children>
+      <Pane layoutX="176.0" prefHeight="531.0" prefWidth="902.0" styleClass="textoPane" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css">
+         <children>
+            <GridPane fx:id="grpFechaLimite" alignment="CENTER" layoutX="31.0" layoutY="29.0" prefHeight="41.0" prefWidth="847.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="89.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="108.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="76.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="77.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="71.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="89.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="72.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Código &#10;Cuenta" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="txtCodigoCuentaPorCobrar" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="81.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="97.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Número&#10;Factura" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtNumeroFactura" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="66.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Año" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <TextField fx:id="txtAnio" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="5" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="60.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Mes" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" />
+                  <TextField fx:id="txtMes" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="7" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="142.0" layoutY="95.0" prefHeight="41.0" prefWidth="625.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="104.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="152.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="192.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="159.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="91.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Valor&#10;Neto Pago" textAlignment="CENTER" wrapText="true" />
+                  <Label prefHeight="41.0" prefWidth="42.0" styleClass="labelQuetzal" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="  Q." GridPane.columnIndex="1" />
+                  <TextField fx:id="txtValorNetoPago" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="86.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="180.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Estado &#10;del Pago" textAlignment="RIGHT" wrapText="true" GridPane.columnIndex="3" />
+                  <TextField fx:id="txtEstadoPago" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="218.0" styleClass="text-field" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+            <GridPane layoutY="160.0" prefHeight="41.0" prefWidth="300.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="134.0" styleClass="labels" stylesheets="@../resource/VistaEmpleadosCSS.css" text="Código &#10;Administración" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoAdministracion" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Administración" stylesheets="@../resource/VistaEmpleadosCSS.css" unFocusColor="WHITE" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="325.0" layoutY="160.0" prefHeight="41.0" prefWidth="228.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="87.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="141.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="77.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Código &#10;Cliente" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="1" />
+                  <JFXComboBox fx:id="cmbCodigoCliente" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Cliente" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="564.0" layoutY="160.0" prefHeight="41.0" prefWidth="311.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="213.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="81.0" styleClass="labels" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Código&#10;Local" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoLocal" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="225.0" promptText="Local" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" unFocusColor="WHITE" visibleRowCount="5" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblCuentasPorCobrar" editable="true" layoutX="86.0" layoutY="224.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="278.0" prefWidth="738.0" styleClass="table-cell" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoCuentaPorCobrar" minWidth="-1.0" prefWidth="74.0" text="Código &#10;Cuenta" />
+                <TableColumn fx:id="colNumeroFactura" minWidth="-1.0" prefWidth="79.0" text="Número&#10;Factura&#10;&#10;" />
+                  <TableColumn fx:id="colAnio" minWidth="-1.0" prefWidth="61.0" text="Año" />
+                  <TableColumn fx:id="colMes" minWidth="-1.0" prefWidth="56.0" text="Mes&#10;" />
+                  <TableColumn fx:id="colValorNetoPago" minWidth="-1.0" prefWidth="119.0" text="Valor Neto del&#10;Pago" />
+                  <TableColumn fx:id="colEstadoPago" minWidth="-1.0" prefWidth="91.0" text="Estado del&#10;Pago&#10;" />
+                  <TableColumn fx:id="colCodigoAdministracion" prefWidth="84.0" text="Código&#10;Admón." />
+                  <TableColumn fx:id="colCodigoCliente" prefWidth="84.0" text="Código&#10;Cliente" />
+                  <TableColumn fx:id="colCodigoLocal" prefWidth="83.0" text="Código&#10;Local" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane prefHeight="531.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="226.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Nuevo">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="271.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="316.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="361.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="13.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cuentasPorCobrar.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="176.0" text="CUENTAS POR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="41.0" prefHeight="27.0" prefWidth="176.0" text="COBRAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="6.0" layoutY="477.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton fx:id="btnRegresar" alignment="CENTER" contentDisplay="CENTER" layoutY="417.0" onMouseClicked="#ventanaLocales" prefHeight="45.0" prefWidth="176.0" styleClass="btnRegresar" stylesheets="@../resource/VistaCuentasPorCobrarCSS.css" text=" Regresar" textAlignment="CENTER" textFill="#f39c12">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconRegresar" fill="#f39c12" fontSmoothingType="LCD" glyphName="ARROW_LEFT" size="29" wrappingWidth="140.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

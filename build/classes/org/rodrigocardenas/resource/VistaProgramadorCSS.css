@@ -1,0 +1,86 @@
+
+.btnProgramador
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnAdministracion
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnProgramador:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.btnAdministracion:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.imagenPane
+{
+    -fx-background-color: #233670;
+}
+
+.textoPane
+{
+    -fx-background-color: #405491;
+}
+
+.labelDatos
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16.0 pt;
+}
+
+.labelSubtitulos
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.labelTitulo
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #F39C12;
+    -fx-font-size: 25.0 pt;
+    -fx-font-weight: bold;
+}
+
+.labelAdministracion
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20.0 pt;
+    -fx-font-weight: bold; 
+}
+
+
+.imageView:hover
+{
+    -fx-opacity: 0.5;
+}
+
+.imageView:pressed
+{
+    -fx-opacity: 0.9;
+}

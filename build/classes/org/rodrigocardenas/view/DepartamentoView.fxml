@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.DepartamentoController">
+   <children>
+      <Pane layoutX="176.0" prefHeight="490.0" prefWidth="632.0" styleClass="textoPane" stylesheets="@../resource/VistaDepartamentosCSS.css">
+         <children>
+            <GridPane layoutX="32.0" layoutY="38.0" prefHeight="47.0" prefWidth="571.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="84.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="53.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="184.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="125.0" styleClass="labels" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Código&#10;Departamento" textAlignment="CENTER" />
+                  <TextField fx:id="txtCodigoDepartamento" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="149.0" styleClass="text-field" stylesheets="@../resource/VistaDepartamentosCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="125.0" styleClass="labels" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Nombre del&#10;Departamento" textAlignment="CENTER" GridPane.columnIndex="3" />
+                  <TextField fx:id="txtNombreDepartamento" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="149.0" styleClass="text-field" stylesheets="@../resource/VistaDepartamentosCSS.css" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblDepartamentos" layoutX="46.0" layoutY="115.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="356.0" prefWidth="544.0" styleClass="table-cell" stylesheets="@../resource/VistaDepartamentosCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoDepartamento" prefWidth="222.0" text="Código Departamento" />
+                <TableColumn fx:id="colNombreDepartamento" minWidth="6.0" prefWidth="316.0" text="Nombre del Departamento" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane prefHeight="490.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaDepartamentosCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="CENTER" contentDisplay="CENTER" layoutY="226.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Nuevo" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="271.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="316.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="361.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaDepartamentosCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="175.0" fitWidth="169.0" layoutX="4.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/departamentos.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="176.0" text="DEPARTAMENTOS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="4.0" layoutY="437.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

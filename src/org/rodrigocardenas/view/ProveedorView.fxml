@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.ProveedorController">
+   <children>
+      <Pane layoutX="176.0" prefHeight="531.0" prefWidth="904.0" styleClass="textoPane" stylesheets="@../resource/VistaProveedoresCSS.css">
+         <children>
+            <GridPane layoutX="80.0" layoutY="22.0" prefHeight="41.0" prefWidth="745.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="90.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="92.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="115.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="137.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="106.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="208.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="82.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Código &#10;Proveedor" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="txtCodigoProveedor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="81.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="108.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="NIT del&#10;Proveedor" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtNITProveedor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="166.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="97.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Servicio&#10;Prestado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <TextField fx:id="txtServicioPrestado" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="133.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="34.0" layoutY="91.0" prefHeight="41.0" prefWidth="770.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="108.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="148.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="121.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="303.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="txtTelefonoProveedor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="86.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="131.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Teléfono&#10;Proveedor" textAlignment="CENTER" wrapText="true" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="145.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Dirección&#10;Proveedor" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtDireccionProveedor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="258.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="-7.0" layoutY="152.0" prefHeight="41.0" prefWidth="585.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="99.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="33.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="10.0" prefWidth="148.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="105.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Saldo en Contra" textAlignment="RIGHT" wrapText="true" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="91.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Saldo a&#10;Favor" textAlignment="RIGHT" wrapText="true" />
+                  <TextField fx:id="txtSaldoFavor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="2" />
+                  <Label prefHeight="59.0" prefWidth="28.0" styleClass="labelQuetzal" stylesheets="@../resource/VistaProveedoresCSS.css" text="  Q." GridPane.columnIndex="1" />
+                  <Label prefHeight="41.0" prefWidth="37.0" styleClass="labelQuetzal" stylesheets="@../resource/VistaProveedoresCSS.css" text="  Q." GridPane.columnIndex="4" />
+                  <TextField fx:id="txtSaldoContra" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="161.0" styleClass="text-field" stylesheets="@../resource/VistaProveedoresCSS.css" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="588.0" layoutY="152.0" prefHeight="41.0" prefWidth="290.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="134.0" styleClass="labels" stylesheets="@../resource/VistaProveedoresCSS.css" text="Código &#10;Administración" textAlignment="RIGHT" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoAdministracion" disable="true" focusColor="WHITE" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Administración" stylesheets="@../resource/VistaProveedoresCSS.css" unFocusColor="WHITE" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblProveedores" editable="true" layoutX="24.0" layoutY="222.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="284.0" prefWidth="856.0" styleClass="table-cell" stylesheets="@../resource/VistaProveedoresCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoProveedor" minWidth="-1.0" prefWidth="74.0" text="Código &#10;Proveedor" />
+                <TableColumn fx:id="colNITProveedor" minWidth="-1.0" prefWidth="76.0" text="NIT del&#10;Proveedor&#10;" />
+                  <TableColumn fx:id="colServicioPrestado" minWidth="-1.0" prefWidth="127.0" text="Servicio&#10;Prestado" />
+                  <TableColumn fx:id="colTelefonoProveedor" minWidth="-1.0" prefWidth="74.0" text="Teléfono&#10;Proveedor" />
+                  <TableColumn fx:id="colDireccionProveedor" minWidth="-1.0" prefWidth="225.0" text="Dirección&#10;Proveedor&#10;" />
+                  <TableColumn fx:id="colSaldoFavor" minWidth="-1.0" prefWidth="89.0" text="Saldo a&#10;Favor&#10;&#10;" />
+                  <TableColumn fx:id="colSaldoContra" maxWidth="177.0" minWidth="-1.0" prefWidth="89.0" text="Saldo en&#10;Contra&#10;" />
+                  <TableColumn fx:id="colCodigoAdministracion" prefWidth="95.0" text="Código&#10;Admón." />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane prefHeight="531.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaProveedoresCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="226.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaProveedoresCSS.css" text="Nuevo">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="271.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaProveedoresCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="316.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaProveedoresCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="361.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaProveedoresCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="164.0" fitWidth="167.0" layoutX="6.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/proveedores.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="176.0" text="PROVEEDORES" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="6.0" layoutY="478.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton fx:id="btnCuentasPorPagar" alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutY="412.0" onMouseClicked="#ventanaCuentasPorPagar" prefHeight="56.0" prefWidth="176.0" styleClass="btnCuentasPorPagar" stylesheets="@../resource/VistaProveedoresCSS.css" text="      Cuentas por &#10;      Pagar">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconCuentasPorPagar" fill="#f39c12" fontSmoothingType="LCD" glyphName="MONEY" size="29" wrappingWidth="153.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

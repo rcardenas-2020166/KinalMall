@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.LocalController">
+   <children>
+      <Pane layoutX="176.0" prefHeight="531.0" prefWidth="774.0" styleClass="textoPane" stylesheets="@../resource/VistaLocalesCSS.css">
+         <children>
+            <GridPane layoutX="24.0" layoutY="46.0" prefHeight="45.0" prefWidth="117.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="68.0" minWidth="10.0" prefWidth="68.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="53.0" minWidth="10.0" prefWidth="49.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="104.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Código&#10;Local" textAlignment="CENTER" />
+                  <TextField fx:id="txtCodigoLocal" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="50.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="174.0" layoutY="46.0" prefHeight="45.0" prefWidth="176.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="75.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="104.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Saldo a&#10;Favor" textAlignment="CENTER" />
+                  <TextField fx:id="txtSaldoFavor" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="104.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="385.0" layoutY="46.0" prefHeight="45.0" prefWidth="176.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="75.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="104.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Saldo en&#10;Contra" textAlignment="CENTER" />
+                  <TextField fx:id="txtSaldoContra" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="104.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="597.0" layoutY="47.0" prefHeight="44.0" prefWidth="139.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="105.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="48.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="104.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Meses&#10;Pendientes" textAlignment="CENTER" />
+                  <TextField fx:id="txtMesesPendientes" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="68.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="24.0" layoutY="118.0" prefHeight="40.0" prefWidth="195.0">
+               <columnConstraints>
+                  <ColumnConstraints maxWidth="199.0" minWidth="10.0" prefWidth="120.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="73.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="119.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="&#10;Disponibilidad" textAlignment="CENTER" />
+                  <TextField fx:id="txtDisponibilidad" alignment="CENTER" editable="false" prefHeight="37.0" prefWidth="86.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="262.0" layoutY="118.0" prefHeight="44.0" prefWidth="211.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="71.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="29.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="111.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="78.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Valor del&#10;Local" textAlignment="CENTER" />
+                  <TextField fx:id="txtValorLocal" alignment="CENTER" editable="false" prefHeight="37.0" prefWidth="86.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="2" />
+                  <Label prefHeight="59.0" prefWidth="28.0" styleClass="labelQuetzal" stylesheets="@../resource/VistaLocalesCSS.css" text="  Q." GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="507.0" layoutY="117.0" prefHeight="45.0" prefWidth="244.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="120.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="28.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="96.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="122.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Valor &#10;Administración" textAlignment="CENTER" />
+                  <TextField fx:id="txtValorAdministracion" alignment="CENTER" editable="false" prefHeight="37.0" prefWidth="86.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="2" />
+                  <Label prefHeight="59.0" prefWidth="28.0" styleClass="labelQuetzal" stylesheets="@../resource/VistaLocalesCSS.css" text="  Q." GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tblLocales" editable="true" layoutX="18.0" layoutY="211.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="299.0" prefWidth="738.0" styleClass="table-cell" stylesheets="@../resource/VistaLocalesCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoLocal" minWidth="-1.0" prefWidth="75.0" text="Código &#10;Local" />
+                <TableColumn fx:id="colSaldoFavor" minWidth="-1.0" prefWidth="84.0" text="Saldo a &#10;Favor" />
+                  <TableColumn fx:id="colSaldoContra" minWidth="-1.0" prefWidth="87.0" text="Saldo en &#10;Contra" />
+                  <TableColumn fx:id="colMesesPendientes" minWidth="-1.0" prefWidth="97.0" text="Meses&#10;Pendientes" />
+                  <TableColumn fx:id="colDisponibilidad" minWidth="-1.0" prefWidth="120.0" text="Disponibilidad" />
+                  <TableColumn fx:id="colValorLocal" minWidth="-1.0" prefWidth="122.0" text="Valor del&#10;Local&#10;&#10;" />
+                  <TableColumn fx:id="colValorAdministracion" maxWidth="202.0" minWidth="-1.0" prefWidth="146.0" text="Valor &#10;Administración&#10;" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane prefHeight="531.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaLocalesCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="CENTER" contentDisplay="CENTER" layoutY="216.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaLocalesCSS.css" text="Nuevo" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="261.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaLocalesCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="306.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaLocalesCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="351.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaLocalesCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="169.0" fitWidth="164.0" layoutX="6.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/locales.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="176.0" text="LOCALES" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCuentasPorCobrar" alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutY="407.0" onMouseClicked="#ventanaCuentasPorCobrar" prefHeight="56.0" prefWidth="176.0" styleClass="btnCuentasPorCobrar" stylesheets="@../resource/VistaLocalesCSS.css" text="      Cuentas por &#10;      Cobrar">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconCuentasPorCobrar" fill="#f39c12" fontSmoothingType="LCD" glyphName="MONEY" size="29" wrappingWidth="153.0" />
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="9.0" layoutY="477.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

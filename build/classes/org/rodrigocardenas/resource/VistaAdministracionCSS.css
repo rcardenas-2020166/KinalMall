@@ -1,0 +1,174 @@
+
+.btnNuevo
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnEliminar
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnEditar
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnReporte
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14.0 pt;
+    -fx-background-color: #233670;
+}
+
+.btnNuevo:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.btnEliminar:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.btnEditar:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.btnReporte:hover
+{
+    -fx-border-color: #F39C12;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+}
+
+.labels
+{
+    -fx-font-family: "Century Gothic";
+    -fx-text-fill: #F39C12;
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold;
+}
+.imagenPane
+{
+    -fx-background-color: #233670;
+}
+
+.textoPane
+{
+    -fx-background-color: #405491;
+}
+
+
+
+.text-field
+{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #99A3A4;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-field:hover
+{
+    -fx-border-color: #AED6F1;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-background-color: transparent;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+
+
+.table-cell 
+{   
+    -fx-font: 13px "Century Gothic";
+}
+
+.table-row-cell
+{
+    -fx-cell-size : 30;
+}
+
+.table-view:row-selection .table-row-cell:filled:hover 
+{ 
+    -fx-background-color: #F5CBA7;
+}
+
+.table-row-cell:selected 
+{
+    -fx-background-color: #EB984E;
+}
+
+.table-view:row-selection .table-row-cell:filled:selected:hover 
+{ 
+    -fx-background-color: #F5CBA7;
+}
+
+.table-row-cell:selected .text 
+{
+    -fx-fill : #000000;
+}
+
+.table-column 
+{
+    -fx-alignment: CENTER;
+}
+
+.table-view
+{
+   -fx-background-color: #FFFFFF;
+}
+
+.table-view .column-header, .table-view .filler 
+{
+    -fx-background-color: #233670;    
+    -fx-size: 30;
+    -fx-border-color: -fx-box-border;
+}
+
+.table-view .column-header .label
+{
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+
+.imageView:hover
+{
+    -fx-opacity: 0.5;
+}
+
+.imageView:pressed
+{
+    -fx-opacity: 0.9;
+}

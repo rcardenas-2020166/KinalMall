@@ -1,0 +1,36 @@
+
+.loginBtn
+{
+    -fx-background-color: #233670;
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.loginBtn:hover
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: #233670;
+    -fx-border-color: #233670;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16.0 pt;
+    -fx-font-weight: bold; 
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+
+.label
+{
+    -fx-text-fill: #233670;
+}
+
+.label:hover
+{
+    -fx-font-weight: bold; 
+    -fx-text-fill: #233670;
+}
