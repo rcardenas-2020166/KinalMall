@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.AdministracionController">
+   <children>
+      <Pane layoutX="176.0" layoutY="-6.0" prefHeight="457.0" prefWidth="626.0" styleClass="textoPane" stylesheets="@../resource/VistaAdministracionCSS.css">
+         <children>
+            <GridPane layoutX="24.0" layoutY="41.0" prefHeight="45.0" prefWidth="578.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="135.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="131.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="32.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="105.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="183.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="8.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="68.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="145.0" styleClass="labels" stylesheets="@../resource/VistaAdministracionCSS.css" text="Código" />
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="151.0" styleClass="labels" stylesheets="@../resource/VistaAdministracionCSS.css" text="Administración" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtCodigoAdministracion" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="96.0" styleClass="text-field" stylesheets="@../resource/VistaAdministracionCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="98.0" styleClass="labels" stylesheets="@../resource/VistaAdministracionCSS.css" text="Dirección" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtDireccion" editable="false" prefHeight="25.0" prefWidth="122.0" styleClass="text-field" stylesheets="@../resource/VistaAdministracionCSS.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="208.0" layoutY="97.0" prefHeight="30.0" prefWidth="211.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="82.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="129.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="76.0" styleClass="labels" stylesheets="@../resource/VistaAdministracionCSS.css" text="Teléfono" />
+                  <TextField fx:id="txtTelefono" alignment="CENTER" editable="false" prefHeight="2.0" prefWidth="101.0" stylesheets="@../resource/VistaAdministracionCSS.css" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="450.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaAdministracionCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="CENTER" contentDisplay="CENTER" layoutY="194.0" onAction="#nuevo" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaAdministracionCSS.css" text="Nuevo" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="239.0" onAction="#eliminar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaAdministracionCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="284.0" onAction="#editar" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaAdministracionCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="329.0" onAction="#reporte" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaAdministracionCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="169.0" fitWidth="164.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/administracion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tblAdministracion" layoutX="202.0" layoutY="197.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="225.0" prefWidth="578.0" styleClass="table-cell" stylesheets="@../resource/VistaAdministracionCSS.css">
+        <columns>
+          <TableColumn fx:id="colCodigoAdministracion" prefWidth="185.0" text="Código Administración" />
+          <TableColumn fx:id="colDireccion" minWidth="6.0" prefWidth="227.0" text="Dirección" />
+            <TableColumn fx:id="colTelefono" minWidth="6.0" prefWidth="160.0" text="Teléfono" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="7.0" layoutY="397.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

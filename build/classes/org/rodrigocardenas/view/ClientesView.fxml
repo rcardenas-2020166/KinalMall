@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigocardenas.controller.ClientesController">
+   <children>
+      <Pane layoutX="176.0" layoutY="-3.0" prefHeight="457.0" prefWidth="876.0" styleClass="textoPane" stylesheets="@../resource/VistaLocalesCSS.css">
+         <children>
+            <TableView fx:id="tblClientes" editable="true" layoutX="11.0" layoutY="206.0" prefHeight="237.0" prefWidth="856.0" styleClass="table-cell" stylesheets="@../resource/VistaLocalesCSS.css">
+              <columns>
+                <TableColumn fx:id="colCodigoCliente" minWidth="-1.0" prefWidth="67.0" text="Código &#10;Cliente" />
+                <TableColumn fx:id="colNombresCliente" minWidth="-1.0" prefWidth="92.0" text="Nombres&#10;Cliente&#10;" />
+                  <TableColumn fx:id="colApellidosCliente" minWidth="-1.0" prefWidth="83.0" text="Apellidos&#10;Cliente" />
+                  <TableColumn fx:id="colTelefonoCliente" minWidth="-1.0" text="Teléfono&#10;Cliente" />
+                  <TableColumn fx:id="colDireccionCliente" minWidth="-1.0" prefWidth="139.0" text="Dirección&#10;Cliente&#10;" />
+                  <TableColumn fx:id="colEmailCliente" minWidth="-1.0" prefWidth="150.0" text="Email &#10;Cliente&#10;&#10;" />
+                  <TableColumn fx:id="colCodigoLocal" maxWidth="167.0" minWidth="-1.0" prefWidth="75.0" text="Código&#10;Local&#10;" />
+                  <TableColumn fx:id="colCodigoAdministracion" prefWidth="77.0" text="Código&#10;Admón." />
+                  <TableColumn fx:id="colCodigoTipoCliente" maxWidth="176.0" minWidth="-1.0" prefWidth="87.0" text="Código&#10;Tipo Cliente&#10;" />
+              </columns>
+            </TableView>
+            <GridPane layoutY="24.0" prefHeight="100.0" prefWidth="846.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="82.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="98.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="122.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="185.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="79.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="280.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="26.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtTelefonoCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="111.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Código &#10;Cliente" textAlignment="CENTER" wrapText="true" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="108.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Nombres &#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtNombresCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="80.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Apellidos&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <TextField fx:id="txtApellidosCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="5" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TOP" prefHeight="41.0" prefWidth="141.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Teléfono&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtCodigoCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TOP" prefHeight="41.0" prefWidth="107.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Dirección&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtDireccionCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="TOP" prefHeight="41.0" prefWidth="74.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Email&#10;Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtEmailCliente" alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtApellidosCliente1" alignment="CENTER" editable="false" layoutX="576.0" layoutY="15.0" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" />
+                  <TextField fx:id="txtApellidosCliente11" alignment="CENTER" editable="false" layoutX="10.0" layoutY="15.0" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" />
+                  <TextField fx:id="txtApellidosCliente111" alignment="CENTER" editable="false" layoutX="10.0" layoutY="15.0" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" />
+                  <TextField fx:id="txtApellidosCliente1111" alignment="CENTER" editable="false" layoutX="10.0" layoutY="15.0" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" />
+                  <TextField fx:id="txtApellidosCliente11111" alignment="CENTER" editable="false" layoutX="10.0" layoutY="15.0" prefHeight="33.0" prefWidth="113.0" styleClass="text-field" stylesheets="@../resource/VistaLocalesCSS.css" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="46.0" layoutY="135.0" prefHeight="41.0" prefWidth="754.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="111.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Código &#10;Local" textAlignment="CENTER" wrapText="true" />
+                  <JFXComboBox fx:id="cmbCodigoLocal" prefHeight="41.0" prefWidth="118.0" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="122.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Código &#10;Adinistración" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                  <JFXComboBox fx:id="cmbCodigoAdministracion" prefHeight="41.0" prefWidth="116.0" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="41.0" prefWidth="111.0" styleClass="labels" stylesheets="@../resource/VistaLocalesCSS.css" text="Código &#10;Tipo Cliente" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+                  <JFXComboBox fx:id="cmbCodigoTipoCliente" prefHeight="41.0" prefWidth="119.0" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="450.0" prefWidth="176.0" styleClass="imagenPane" stylesheets="@../resource/VistaLocalesCSS.css">
+         <children>
+            <JFXButton fx:id="btnNuevo" alignment="CENTER" contentDisplay="CENTER" layoutY="194.0" prefHeight="45.0" prefWidth="176.0" styleClass="btnNuevo" stylesheets="@../resource/VistaLocalesCSS.css" text="Nuevo" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconNuevo" fill="WHITE" glyphName="PLUS_SQUARE" size="28" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEliminar" alignment="CENTER" contentDisplay="CENTER" layoutY="239.0" prefHeight="45.0" prefWidth="176.0" styleClass="btnEditar" stylesheets="@../resource/VistaLocalesCSS.css" text="Eliminar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEliminar" fill="WHITE" glyphName="TRASH_ALT" size="29" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnEditar" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutY="284.0" prefHeight="45.0" prefWidth="176.0" styleClass="btnEliminar" stylesheets="@../resource/VistaLocalesCSS.css" text="Editar" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconEditar" fill="WHITE" glyphName="EDIT" size="29" wrappingWidth="137.0" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnReporte" alignment="CENTER" contentDisplay="CENTER" layoutY="329.0" prefHeight="45.0" prefWidth="176.0" styleClass="btnReporte" stylesheets="@../resource/VistaLocalesCSS.css" text="Reporte" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIconView fx:id="iconReporte" fill="WHITE" glyphName="FILE" size="26" wrappingWidth="134.0" />
+               </graphic></JFXButton>
+            <ImageView fitHeight="169.0" fitWidth="164.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/locales.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="7.0" layoutY="397.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
